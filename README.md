@@ -43,7 +43,7 @@ Start with:
 
 Run:
 ```sh
-$ hugo new about.md 
+$ hugo new about.md
 $ hugo new contact.md
 ```
 Then edit the markdown files with the content you'd like shown in your main page's About and Contact sections.

@@ -3,7 +3,18 @@
         {{ if .Site.Params.footerText }}
             {{ .Site.Params.footerText }}
         {{ else }}
-        <span class="footer-text"><a href="https://github.com/hivickylai/hugo-theme-introduction" target="_blank" rel="noopener">Introduction</a> theme for <a href="http://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. Made with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i>. <a href="https://vickylai.io" target="_blank" rel="noopener">Vicky Lai</a> {{ now.Format "2006" }}</span>
-        {{ end }}
+        <span class="footer-text">
+            ©  {{ now.Format "2006" }} with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i>. Anna</a><br />
+            Hosted by <a href="https://app.netlify.com/" target="_blank" rel="noopener"> Netlify.
+            Powered by <a href="http://gohugo.io/" target="_blank" rel="noopener">
+            Hugo.Original theme
+            <a href="https://github.com/hivickylai/hugo-theme-introduction" target="_blank" rel="noopener">Introduction</a>
+             Made by <a href="https://vickylai.io" target="_blank" rel="noopener">Vicky Lai</a><br />
+            佛未曾曰：前世<span id="busuanzi_value_site_pv"></span>次的回眸,
+            才換來今世<span id="busuanzi_value_site_uv"></span>次擦肩
+        </span>
+
+            {{ end }}
+
     </div><!-- End Footer container -->
 </div><!-- End Footer section -->

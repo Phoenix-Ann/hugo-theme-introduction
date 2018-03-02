@@ -7,7 +7,9 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
+<!--<meta name="referrer" content="no-referrer">-->
+<meta name="referrer" content="no-referrer-when-downgrade">
+
 {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
 
 <base href="{{ .Site.BaseURL }}">
@@ -71,6 +73,23 @@ crossorigin="anonymous"></script>
 
 <!-- Google Analytics -->
 {{ template "_internal/google_analytics_async.html" . }}
+
+<!-- baidu analytics -->
+{{ if .Site.Params.baiduanalytics }}
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?{{ .Site.Params.baiduanalytics }}";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+{{ end }}
+
+<!-- 引入不蒜子busuanzi -->
+<script type="text/javascript" async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
 <!-- RSS -->
 {{ if .RSSLink }}

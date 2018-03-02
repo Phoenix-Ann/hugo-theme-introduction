@@ -8,7 +8,6 @@ canonifyurls        = true                              # Turns relative urls in
 # disqusshortname   = "xxx"                             # Enable Disqus for comments
 # googleAnalytics   = "xxx"
 
-
 [params]
     bloghead            = "Blog"                        # Full name shows on blog post pages
     firstname           = "Introduction"                # First name shows in introduction on main page
@@ -18,9 +17,9 @@ canonifyurls        = true                              # Turns relative urls in
     avatar              = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
     email               = "youremail@email.com"         # Shows in contact section, or leave blank to omit
     localtime           = true                          # Show your current local time in contact section
-    timezone            = "Asia/Shanghai"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    timezone            = "America/Los_Angeles"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
     dateform            = "Jan 2, 2006"
-    dateformfull        = "Mon Jan 2 2006 15:04:05 CCT"
+    dateformfull        = "Mon Jan 2 2006 15:04:05 EST"
     cachebuster         = false                         # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
     description         = "Website description."        # Max 160 characters show in search results
     faviconfile         = "img/fav.ico"
@@ -43,25 +42,17 @@ canonifyurls        = true                              # Turns relative urls in
     sharepinterest      = false
     sharegoogleplus     = true
 
-    #baiduanalytics      = "xxx"                         #百度统计
-    #tencentanalytics    = "xxx"                         #腾讯分析S
-    #LiveReID            = "xxx"                         #来必力评论 LiveRe
-
 # Social icons appear in introduction and contact section. Add as many more as you like.
 # Find icon names here: http://fontawesome.io/cheatsheet/
 
 [[params.social]]
-    url = "https://github.com"
-    icon = "github"
+    url = "https://twitter.com/"
+    icon = "twitter"
 
-#[[params.social]]
-#    url = "https://twitter.com/"
-#    icon = "twitter"
+[[params.social]]
+    url = "https://facebook.com/"
+    icon = "facebook"
 
-#[[params.social]]
-#    url = "https://facebook.com/"
-#    icon = "facebook"
-
-#[[params.social]]
-#    url = "https://linkedin.com/"
-#    icon = "linkedin"
+[[params.social]]
+    url = "https://linkedin.com/"
+    icon = "linkedin"

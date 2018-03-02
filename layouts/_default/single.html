@@ -37,7 +37,8 @@
 
         <!-- 来必力评论 LiveRe City install code -->
         <!-- 来必力City版安装代码 -->
-        <div class="container" id="lv-container" data-id="city" data-uid="MTAyMC8zNDQ1OS8xMDk5Ng==">
+        {{ if .Site.Params.LiveReID }}
+        <div class="container" id="lv-container" data-id="city" data-uid={{ .Site.Params.LiveReID }}>
         <script type="text/javascript">
            (function(d, s) {
                var j, e = d.getElementsByTagName(s)[0];
@@ -51,7 +52,6 @@
                e.parentNode.insertBefore(j, e);
            })(document, 'script');
         </script>
-        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
         </div>
         <!-- City版安装代码已完成 -->
 

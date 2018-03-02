@@ -87,6 +87,11 @@ var _hmt = _hmt || [];
 </script>
 {{ end }}
 
+<!-- tencent analytics -->
+{{ if .Site.Params.tencentanalytics }}
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId={{ .Site.Params.tencentanalytics }}" charset="UTF-8"></script>
+{{ end }}
+
 <!-- 引入不蒜子busuanzi -->
 <script type="text/javascript" async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

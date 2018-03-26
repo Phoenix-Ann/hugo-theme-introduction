@@ -16,6 +16,7 @@
         <div class="container">
             <!-- Begin Nav bar -->
             {{ partial "nav-single.html" . }}
+
         </div>
         <!-- End Nav bar -->
 
@@ -26,7 +27,6 @@
             <img src="{{ .Params.image }}" class="img-responsive">
             </div>
             {{ end }}
-
             {{ .Content }}
         </div>
         <!-- End blog post content -->
@@ -35,26 +35,24 @@
             {{ template "_internal/disqus.html" . }}
         </div>
 
-        <!-- 来必力评论 LiveRe City install code -->
-        <!-- 来必力City版安装代码 -->
-        {{ if .Site.Params.LiveReID }}
-        <div class="container" id="lv-container" data-id="city" data-uid={{ .Site.Params.LiveReID }}>
-        <script type="text/javascript">
-           (function(d, s) {
-               var j, e = d.getElementsByTagName(s)[0];
+    <!-- Ann LiveRe City install code -->
+    <!-- Ann City Ann -->
+    <div class="container" id="lv-container" data-id="city" data-uid="MTAyMC8zNDQ1OS8xMDk5Ng==">
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
 
-               if (typeof LivereTower === 'function') { return; }
+           if (typeof LivereTower === 'function') { return; }
 
-               j = d.createElement(s);
-               j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-               j.async = true;
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
 
-               e.parentNode.insertBefore(j, e);
-           })(document, 'script');
-        </script>
-        </div>
-        <!-- City版安装代码已完成 -->
-
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    </div>
+    <!-- City�氲װ���������� -->
         <div class="container has-text-centered top-pad">
             <hr>
             <a href="{{ .Permalink }}#top">

@@ -22,7 +22,6 @@
 {{ end }}
 </title>
 <link rel="canonical" href="{{ .Permalink }}">
-
 <!-- HTTPS -->
 
 {{ if .Site.Params.enforce_ssl }}
@@ -71,6 +70,8 @@ crossorigin="anonymous"></script>
 {{ end }}
 >
 
+<!-- <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}"> -->
+
 <!-- Google Analytics -->
 {{ template "_internal/google_analytics_async.html" . }}
 
@@ -87,7 +88,6 @@ var _hmt = _hmt || [];
 </script>
 {{ end }}
 
-<!-- tencent analytics -->
 {{ if .Site.Params.tencentanalytics }}
 <script type="text/javascript" src="http://tajs.qq.com/stats?sId={{ .Site.Params.tencentanalytics }}" charset="UTF-8"></script>
 {{ end }}

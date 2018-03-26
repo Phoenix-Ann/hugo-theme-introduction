@@ -1,0 +1,10 @@
+<!--Toc Ann Start -->
+{{- if or .Params.toc (and (gt .WordCount 400 ) (ne .Params.toc "false")) }}
+<aside class="toc">
+  <header>
+  <h2>{{.Title}}</h2>
+  </header>
+  {{ .TableOfContents }}
+</aside>
+{{- end }}
+<!--Toc Ann End -->

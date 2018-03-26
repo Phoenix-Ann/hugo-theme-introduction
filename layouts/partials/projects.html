@@ -2,6 +2,14 @@
     <!-- Begin Projects container -->
     <h2 class="title is-2 has-text-centered">Projects</h2>
 
+    <!--不蒜子阅读量-->
+    <span class="footer-text">
+    中國妖怪吸引到</i><span id="busuanzi_value_page_pv"></span>位來訪者
+    <i class="fa fa-odnoklassniki"></i><br />
+    <p style="color: #75b8c8;font-size: 10px;line-height: 30px">点击图片有惊喜
+    <i class="fa fa-hand-o-down"></i>
+    </span>
+
     <div class="section is-small">
         <div class="columns is-multiline">
             {{ range sort .Pages }} {{ if eq .Section "projects" }}
@@ -17,8 +25,6 @@
                                 </a>
                             </figure>
                         </div>
-                        <!--不蒜子阅读量-->
-                        本怪被探索</i><span id="busuanzi_value_page_pv"></span>次
 
                         <div class="card-content has-text-centered top-pad">
                                 <a {{ if .Params.external_link }} href="{{ .Params.external_link }}" {{ end }}>
@@ -33,7 +39,7 @@
 </div>
 
 <!-- 来必力评论 LiveRe City install code -->
-<!-- 来必力City版安装代码 -->
+<!-- 来必力City版安装代码
 <div class="container" id="lv-container" data-id="city" data-uid="MTAyMC8zNDQ1OS8xMDk5Ng==">
 <script type="text/javascript">
    (function(d, s) {
@@ -48,8 +54,7 @@
        e.parentNode.insertBefore(j, e);
    })(document, 'script');
 </script>
-<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
+</div> -->
 <!-- City版安装代码已完成 -->
 
 
